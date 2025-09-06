@@ -1,4 +1,6 @@
 import { Card } from "@/components/ui/card";
+import aboutImage1 from "@/assets/7E819412-7EFE-4908-95D1-379764A6DD4C.png";
+import aboutImage2 from "@/assets/A6B488B1-5C0C-4D88-8D9C-156E76C9F5D4.png";
 
 export const About = () => {
   return (
@@ -10,7 +12,16 @@ export const About = () => {
         </p>
         
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-6">
-          <Card className="p-6 shadow-elegant">
+          <div className="space-y-6">
+            <Card className="p-0 shadow-elegant overflow-hidden">
+              <img 
+                src={aboutImage1} 
+                alt="SEBCON Trading - Professional construction materials supplier" 
+                className="w-full h-48 object-cover"
+              />
+            </Card>
+            
+            <Card className="p-6 shadow-elegant">
             <h3 className="text-xl font-bold mb-4">Our Mission</h3>
             <p className="text-muted-foreground mb-4">
               To simplify material procurement by offering quality-assured products, transparent pricing, and dependable delivery.
@@ -29,9 +40,19 @@ export const About = () => {
                 On-time fulfillment for projects of all sizes
               </li>
             </ul>
-          </Card>
+            </Card>
+          </div>
           
-          <Card className="p-6 shadow-elegant">
+          <div className="space-y-6">
+            <Card className="p-0 shadow-elegant overflow-hidden">
+              <img 
+                src={aboutImage2} 
+                alt="Quality construction materials and professional service" 
+                className="w-full h-48 object-cover"
+              />
+            </Card>
+            
+            <Card className="p-6 shadow-elegant">
             <h3 className="text-xl font-bold mb-4">At a Glance</h3>
             <ul className="space-y-3 text-foreground">
               <li className="flex items-start gap-2">
@@ -47,7 +68,8 @@ export const About = () => {
                 Clients: Contractors, builders, property managers, homeowners
               </li>
             </ul>
-          </Card>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

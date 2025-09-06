@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Trophy, Shield, DollarSign, Headphones } from "lucide-react";
+import whyChooseUsImage from "@/assets/C6C4679A-6804-4D3E-8C07-1983480B46BF.png";
 
 export const WhyChooseUs = () => {
   const features = [
@@ -32,6 +33,16 @@ export const WhyChooseUs = () => {
         <p className="text-lg text-muted-foreground mb-8 max-w-4xl">
           We combine selection, expertise, and service to keep your project on schedule.
         </p>
+
+        <div className="mb-8">
+          <Card className="p-0 shadow-elegant overflow-hidden max-w-2xl mx-auto">
+            <img 
+              src={whyChooseUsImage} 
+              alt="SEBCON Trading - Trusted construction materials partner" 
+              className="w-full h-64 object-cover"
+            />
+          </Card>
+        </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => {

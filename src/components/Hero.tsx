@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import heroImage from "@/assets/09DDA5BF-BF19-4625-B5E4-B39DA2A68D14.png";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -50,8 +51,17 @@ export const Hero = () => {
             </Badge>
           </div>
 
-          {/* Right Card */}
-          <Card className="bg-gradient-surface border-white/8 p-6 shadow-elegant">
+          {/* Right Content */}
+          <div className="space-y-6">
+            <Card className="bg-gradient-surface border-white/8 p-0 shadow-elegant overflow-hidden">
+              <img 
+                src={heroImage} 
+                alt="SEBCON Trading BuildStrong Supplies - Quality construction materials" 
+                className="w-full h-48 object-cover"
+              />
+            </Card>
+            
+            <Card className="bg-gradient-surface border-white/8 p-6 shadow-elegant">
             <div className="grid grid-cols-3 gap-3 mb-6">
               <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
                 <h4 className="text-xl font-bold mb-1">20+ yrs</h4>
@@ -86,7 +96,8 @@ export const Hero = () => {
                 </p>
               </Card>
             </div>
-          </Card>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
