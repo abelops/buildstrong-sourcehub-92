@@ -1,9 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Droplets, Zap, Building } from "lucide-react";
-import sanitaryImage from "@/assets/327DA6A4-55E7-406B-AA22-C8477F5B2877.png";
-import electricalImage from "@/assets/47A5F9AF-DFAA-447F-AC38-A5396D8E8BFD.png";
-import buildingImage from "@/assets/506F71FD-07A0-4A19-A9B2-1F191576D476.png";
 
 export const Products = () => {
   const scrollToSection = (id: string) => {
@@ -29,13 +26,7 @@ export const Products = () => {
 
         {/* Main Products Grid */}
         <div className="grid md:grid-cols-3 gap-6 mb-8">
-          <Card className="p-0 shadow-elegant overflow-hidden">
-            <img 
-              src={sanitaryImage} 
-              alt="Sanitary materials - pipes, fittings, fixtures" 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
+          <Card className="p-6 shadow-elegant">
               <Badge className="brand-pill mb-4">
                 <Droplets className="w-4 h-4" />
                 Sanitary Materials
@@ -58,16 +49,9 @@ export const Products = () => {
                 Water tanks, heaters, accessories
               </li>
             </ul>
-            </div>
           </Card>
 
-          <Card className="p-0 shadow-elegant overflow-hidden">
-            <img 
-              src={electricalImage} 
-              alt="Electrical materials - cables, switches, lighting" 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
+          <Card className="p-6 shadow-elegant">
               <Badge className="accent-pill mb-4">
                 <Zap className="w-4 h-4" />
                 Electrical Materials
@@ -90,16 +74,9 @@ export const Products = () => {
                 Lighting (LED panels, floodlights)
               </li>
             </ul>
-            </div>
           </Card>
 
-          <Card className="p-0 shadow-elegant overflow-hidden">
-            <img 
-              src={buildingImage} 
-              alt="Building materials - cement, tiles, paints" 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6">
+          <Card className="p-6 shadow-elegant">
               <Badge className="bg-accent/20 text-accent-foreground border-accent/30 mb-4">
                 <Building className="w-4 h-4" />
                 Building Materials
@@ -122,7 +99,6 @@ export const Products = () => {
                 Paints, <strong>Wall Putty</strong>, <strong>Prime Coat</strong>
               </li>
             </ul>
-            </div>
           </Card>
         </div>
 

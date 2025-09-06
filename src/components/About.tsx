@@ -1,6 +1,9 @@
 import { Card } from "@/components/ui/card";
 import aboutImage1 from "@/assets/7E819412-7EFE-4908-95D1-379764A6DD4C.png";
 import aboutImage2 from "@/assets/A6B488B1-5C0C-4D88-8D9C-156E76C9F5D4.png";
+import sanitaryImage from "@/assets/327DA6A4-55E7-406B-AA22-C8477F5B2877.png";
+import electricalImage from "@/assets/47A5F9AF-DFAA-447F-AC38-A5396D8E8BFD.png";
+import buildingImage from "@/assets/506F71FD-07A0-4A19-A9B2-1F191576D476.png";
 
 export const About = () => {
   return (
@@ -68,6 +71,34 @@ export const About = () => {
                 Clients: Contractors, builders, property managers, homeowners
               </li>
             </ul>
+            </Card>
+          </div>
+        </div>
+
+        {/* Product Showcase */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold mb-6 text-center">Our Product Range</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="p-0 shadow-elegant overflow-hidden">
+              <img 
+                src={sanitaryImage} 
+                alt="Professional sanitary materials and plumbing supplies" 
+                className="w-full h-32 object-cover"
+              />
+            </Card>
+            <Card className="p-0 shadow-elegant overflow-hidden">
+              <img 
+                src={electricalImage} 
+                alt="Quality electrical components and wiring materials" 
+                className="w-full h-32 object-cover"
+              />
+            </Card>
+            <Card className="p-0 shadow-elegant overflow-hidden">
+              <img 
+                src={buildingImage} 
+                alt="Construction materials and building supplies" 
+                className="w-full h-32 object-cover"
+              />
             </Card>
           </div>
         </div>
