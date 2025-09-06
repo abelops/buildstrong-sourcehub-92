@@ -21,7 +21,7 @@ export const Contact = () => {
     // Create mailto link with form data
     const subject = "New inquiry from SEBCON website";
     const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0APhone: ${formData.phone}%0D%0AMessage: ${formData.message}`;
-    const mailtoLink = `mailto:info@sebcon.example?subject=${encodeURIComponent(subject)}&body=${body}`;
+    const mailtoLink = `mailto:susuelsaje@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
     
     // Open email client
     window.location.href = mailtoLink;
@@ -29,7 +29,7 @@ export const Contact = () => {
     // Show success message
     toast({
       title: "Email client opened",
-      description: "If your email app didn't open, please contact us at info@sebcon.example"
+      description: "If your email app didn't open, please contact us at susuelsaje@gmail.com"
     });
     
     // Reset form
@@ -109,7 +109,7 @@ export const Contact = () => {
                 <Button 
                   type="button" 
                   variant="outline"
-                  onClick={() => window.location.href = "mailto:info@sebcon.example?subject=Inquiry%20from%20Website"}
+                  onClick={() => window.location.href = "mailto:susuelsaje@gmail.com?subject=Inquiry%20from%20Website"}
                 >
                   Email Directly
                 </Button>
@@ -139,7 +139,7 @@ export const Contact = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-                <strong>Email:</strong> info@sebcon.example
+                <strong>Email:</strong> susuelsaje@gmail.com
               </li>
               <li className="flex items-start gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
